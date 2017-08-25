@@ -45,40 +45,22 @@ $(document).ready(function() {
     });
 //use user input to make new pizza
     var myPizza = new Pizza (userSize, userToppings);
-    // userPizzas.push(parseInt(myPizza.cost()));
 //show order summary
     $('ul#userPizzas').append("<li><span>" + myPizza.size + " with " + myPizza.toppings + " " + (myPizza.cost()) +  "</span></li>");
     $('#order').show();
     $('#choosePizza').hide();
-//see pizza details
-    // $('.clickable').last().click(function() {
-    //   $('#show-order').show();
-    //   $('.onePizza').text('Size - ' + myPizza.size + ', Cost - $' + (myPizza.cost()));
-    // });
 //add another pizza
     $('#morePizza').click(function() {
       userToppings.splice(0,userToppings.length)
       $('#order').hide();
-      $('#show-order').hide();
-      $('#show-total').hide();
       $('#choosePizza').show();
       $('#choosePizza')[0].reset();
+      $('#orderMessage').hide();
     });
 //place order message
-      $('#placeOrder').click(function() {
-        alert('Your order has been placed!');
-      });
-//hide pizza details
-    // $('#hidePizza').click(function() {
-    //   $('#show-order').hide();
-    //   $('.onePizzaSize').text("");
-    //   $('.onePizzaToppings').text("");
-    //   $('.onePizzaCost').text("");
-    // });
-//show order totalOrder
-    // $('#seeTotal').click(function() {
-    //   $('#show-total').show();
-    //   $('#pizzaCost').text(userPizzas);
-    // });
+    $('#placeOrder').click(function() {
+      $('#orderMessage').text('Your order has been placed!')
+      $('#orderMessage').show();
+    });
   });
 });
