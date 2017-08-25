@@ -15,12 +15,12 @@
       <form id="choosePizza">
         <div class="crustborder" id="pizzaSize" class="form-group">
           <p>What size pizza would you like?</p>
-          <input type="radio" name="size" value="small">Small - $12.00<br>
-          <input type="radio" name="size" value="medium">Medium - $15.00<br>
-          <input type="radio" name="size" value="large">Large - $17.00<br>
+          <input type="radio" name="size" value="small">Small - $12<br>
+          <input type="radio" name="size" value="medium">Medium - $15<br>
+          <input type="radio" name="size" value="large">Large - $17<br>
         </div>
         <div class="crustborder" id="pizzaToppings" class="form-group">
-          <p>Please select your toppings.  All toppings are $1.00 each.</p>
+          <p>Please select your toppings.  All toppings are $1 each.</p>
           <input type="checkbox" name="topping" value="onions">Onions<br>
           <input type="checkbox" name="topping" value="mushrooms">Mushrooms<br>
           <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
@@ -29,24 +29,25 @@
         <button type="submit" class="btn btn-outline-danger">Add pizza to order</button>
       </form>
       <div class="crustborder" id="order">
-        <p>Click on a pizza to see details.</p>
         <p>Your pizzas:</p>
         <ul id="userPizzas">
 
         </ul>
-        <p>Your order will be $<span id="pizzaCost"></span>.00</p>
         <button id="morePizza" class="btn btn-outline-danger" type="button">Add another pizza</button>
-        <button class="btn btn-outline-danger" type="button" id="pickup">Place pickup order</button>
+        <button class="btn btn-outline-danger" type="button" id="placeOrder">Place your order!</button>
         <!-- <button class="btn btn-outline-danger" type="button" id="delivery">Place delivery order</button> -->
       </div>
-      <div class="crustborder" id="show-order">
+      <!-- <div class="crustborder" id="show-order">
         <p>About this pizza:</p>
         <ul>
           <span class="onePizza"></span>
-        </ul>
+        </ul> -->
 
-        <button id="hidePizza" class="btn btn-outline-danger" type="button">Hide details</button>
+        <!-- <button id="hidePizza" class="btn btn-outline-danger" type="button">Hide details</button>
       </div>
+      <div id="show-total" class="crustborder">
+        <p>Your order will be $<span id="pizzaCost"></span></p>
+      </div> -->
     </div>
   </body>
 </html>

@@ -41,3 +41,7 @@ ul {
 #show-order {
   display: none;
 }
+
+#show-total {
+  display: none;
+}
