@@ -10,17 +10,13 @@ _The site allows the user to choose pizza size and toppings, and returns the cos
 
 ## Specifications
 
-* _Behavior_
-* _Example input:_
-* _Example output:_
+* _User receives a price based on pizza size_
+* _Example input: Large_
+* _Example output: $20.00_
 
-* _Behavior_
-* _Example input:_
-* _Example output:_
-
-* _Behavior_
-* _Example input:_
-* _Example output:_
+* _User receives a price based on pizza toppings_
+* _Example input: Pepperoni and mushroom_
+* _Example output: $17.00_
 
 ## Setup/Installation Requirements
 
