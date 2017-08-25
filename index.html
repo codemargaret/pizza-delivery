@@ -5,11 +5,31 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Pizza Delivery</title>
   </head>
   <body>
     <div class="container">
+      <h1>Mamma Maggie's Soul Pizza</h1>
+      <h5>Hand-crafted pizzas at an affordable price.</h5>
+      <form id="choosePizza">
+        <div class="form-group">
+          <p>What size pizza would you like?</p>
+          <input type="radio" name="size" value="small">Small - $12.00<br>
+          <input type="radio" name="size" value="medium">Medium - $15.00<br>
+          <input type="radio" name="size" value="large">Large - $17.00<br>
+        </div>
+        <div class="form-group">
+          <p>Please select your toppings.  All toppings are $2.00 each.</p>
+          <input type="checkbox" name="topping" value="onions">Onions<br>
+          <input type="checkbox" name="topping" value="mushrooms">Mushrooms<br>
+          <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+          <input type="checkbox" name="topping" value="sausage">Sausage<br>
+        </div>
+        <button type="submit" class="btn btn-outline-danger">How much is my pizza?</button>
+      </form>
+      <div id="pizzaPrice">
 
+      </div>
     </div>
   </body>
 </html>
