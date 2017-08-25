@@ -32,16 +32,15 @@ Pizza.prototype.cost = function() {
 //front end
 $(document).ready(function() {
   $('#choosePizza').submit(function(event) {
-    event.preventDefault;
+    event.preventDefault();
     var userToppings =[];
     var userSize = $('input[name=size]:checked').val();
     $('input[name=topping]:checked').each(function() {
       var userTopping = $(this).val();
       userToppings.push(userTopping);
     });
-  var myPizza = new Pizza (userSize, userToppings);
-  alert(myPizza.toppings);
-  alert(myPizza.toppings.length);
-  alert(myPizza.cost());
+    var myPizza = new Pizza (userSize, userToppings);
+  $('#pizzaCost').text(myPizza.cost());
+  $('#order').show();
   });
 });

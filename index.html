@@ -9,16 +9,16 @@
   </head>
   <body>
     <div class="container">
-      <h1>Mamma Maggie's Soul Pizza</h1>
+      <h1 class="pizzabackground">Mamma Maggie's Soul Pizza</h1>
       <h5>Hand-crafted pizzas at an affordable price.</h5>
       <form id="choosePizza">
-        <div id="pizzaSize" class="form-group">
+        <div class="crustborder" id="pizzaSize" class="form-group">
           <p>What size pizza would you like?</p>
           <input type="radio" name="size" value="small">Small - $12.00<br>
           <input type="radio" name="size" value="medium">Medium - $15.00<br>
           <input type="radio" name="size" value="large">Large - $17.00<br>
         </div>
-        <div id="pizzaToppings" class="form-group">
+        <div class="crustborder" id="pizzaToppings" class="form-group">
           <p>Please select your toppings.  All toppings are $1.00 each.</p>
           <input type="checkbox" name="topping" value="onions">Onions<br>
           <input type="checkbox" name="topping" value="mushrooms">Mushrooms<br>
@@ -27,8 +27,8 @@
         </div>
         <button type="submit" class="btn btn-outline-danger">How much is my pizza?</button>
       </form>
-      <div id="pizzaPrice">
-
+      <div class="crustborder" id="order">
+        <p>Your pizza will be $<span id="pizzaCost"></span>.00</p>
       </div>
     </div>
   </body>

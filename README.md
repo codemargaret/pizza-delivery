@@ -20,7 +20,7 @@ _The site allows the user to choose pizza size and toppings, and returns the cos
 
 ## Setup/Installation Requirements
 
-* _Install pizza delivery by cloning this repository._
+* _Install Pizza Delivery by cloning this repository._
 
 ## Known Bugs
 
