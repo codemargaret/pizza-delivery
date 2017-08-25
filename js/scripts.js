@@ -13,10 +13,14 @@ Pizza.prototype.cost = function() {
 $(document).ready(function() {
   $('#choosePizza').submit(function(event) {
     event.preventDefault;
+    var userToppings =[];
     var userSize = $('input[name=size]:checked').val();
     $('input[name=topping]:checked').each(function() {
       var userTopping = $(this).val();
-      alert(userTopping);
+      userToppings.push(userTopping);
     });
+  var myPizza = new Pizza (userSize, userToppings);
+  alert(myPizza.size);
+  alert(myPizza.toppings);
   });
 });
