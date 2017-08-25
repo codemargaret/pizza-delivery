@@ -6,7 +6,13 @@ function Pizza (size, toppings) {
 }
   //methods
 Pizza.prototype.cost = function() {
-
+  if (this.size === "small") {
+    return 12;
+  } else if (this.size === "medium") {
+    return 15;
+  } else if (this.size === "large") {
+    return 17;
+  }
 }
 
 //front end
@@ -20,7 +26,6 @@ $(document).ready(function() {
       userToppings.push(userTopping);
     });
   var myPizza = new Pizza (userSize, userToppings);
-  alert(myPizza.size);
-  alert(myPizza.toppings);
+  alert(myPizza.cost());
   });
 });
