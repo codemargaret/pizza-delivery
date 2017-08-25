@@ -29,10 +29,15 @@ ul {
   margin: 30px;
 }
 
+.clickable:hover{
+  text-decoration: underline;
+  color: red;
+}
+
 #order {
   display: none;
 }
 
-.show-order {
-
+#show-order {
+  display: none;
 }
