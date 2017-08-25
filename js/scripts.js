@@ -34,13 +34,15 @@ $(document).ready(function() {
   $('#choosePizza').submit(function(event) {
     event.preventDefault();
     var userToppings =[];
+    var userPizzas = [];
     var userSize = $('input[name=size]:checked').val();
     $('input[name=topping]:checked').each(function() {
       var userTopping = $(this).val();
       userToppings.push(userTopping);
     });
     var myPizza = new Pizza (userSize, userToppings);
-  $('#pizzaCost').text(myPizza.cost());
-  $('#order').show();
+    $('ul#userPizzas').append("<li><span>" + myPizza.size + "  with " + myPizza.toppings + "</span></li>");
+    $('#pizzaCost').text(myPizza.cost());
+    $('#order').show();
   });
 });

@@ -6,6 +6,10 @@ body {
   margin: 30px;
 }
 
+ul {
+  list-style: none;
+}
+
 .pizzabackground {
   background-image: url(https://pizzapatron.com/wp-content/uploads/2015/02/pizza-cheese.png);
   background-repeat: no-repeat;
@@ -17,7 +21,8 @@ body {
   border-width: thick;
   border-color: #a87c34;
   border-radius: 50%;
-  padding: 70px;
+  padding: 40px;
+  background-color: lemonchiffon;
 }
 
 .btn {
@@ -26,4 +31,8 @@ body {
 
 #order {
   display: none;
+}
+
+.show-order {
+
 }
