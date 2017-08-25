@@ -3,16 +3,30 @@
 function Pizza (size, toppings) {
   this.size = size;
   this.toppings = toppings;
+  this.basePrice = 17;
 }
   //methods
 Pizza.prototype.cost = function() {
   if (this.size === "small") {
-    return 12;
+    var mySizePrice = this.basePrice - 5;
   } else if (this.size === "medium") {
-    return 15;
+    var mySizePrice = this.basePrice - 2;
   } else if (this.size === "large") {
-    return 17;
+    var mySizePrice = this.basePrice;
   }
+
+  if (this.toppings.length === 0) {
+    var myFinalPrice = mySizePrice
+  } else if (this.toppings.length === 1) {
+    var myFinalPrice = mySizePrice + 1;
+  } else if (this.toppings.length === 2) {
+    var myFinalPrice = mySizePrice + 2;
+  } else if (this.toppings.length === 3) {
+    var myFinalPrice = mySizePrice + 3;
+  } else if (this.toppings.length === 4) {
+    var myFinalPrice = mySizePrice + 4;
+  }
+  return myFinalPrice;
 }
 
 //front end
@@ -26,6 +40,8 @@ $(document).ready(function() {
       userToppings.push(userTopping);
     });
   var myPizza = new Pizza (userSize, userToppings);
+  alert(myPizza.toppings);
+  alert(myPizza.toppings.length);
   alert(myPizza.cost());
   });
 });
