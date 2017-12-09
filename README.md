@@ -5,45 +5,33 @@
 #### By _**Margaret Berry**_
 
 ## Description
-
 _The site allows the user to choose pizza size and toppings, and returns the cost of the pizza based on those parameters._
 
 ## Specifications
-
-* _Shows a price based on pizza size_
-* _Example input: Large_
-* _Example output: $17_
-
-* _Shows a price based on pizza size and toppings_
-* _Example input: Large, pepperoni and mushrooms_
-* _Example output: $19_
-
-* _Shows pizza details in an order summary_
-* _Example input: Large, pepperoni, mushrooms_
-* _Example output: Large with pepperoni, mushrooms 19_
-
-* _User can order multiple pizzas_
-* _Example input: Small, sausage, onions_
-* _Example output: Large with pepperoni, mushrooms 19, Small with sausage, onions 14_
-
-* _User can "place" an order_
-* _Example input: Click "Place your order!"_
-* _Example output: "Your order has been placed!"_
+| Spec              | Input | Output |
+|-------------------|-------|--------|
+| Shows a price based on pizza size    | Large     | $17      |
+| Shows a price based on pizza size and toppings    | Large, pepperoni and mushrooms     | $19      |
 
 ## Setup/Installation Requirements
+_Run the following commands in Terminal:_
 
-* _Install Pizza Delivery by cloning this repository._
+1. `$ git clone` [this repository](https://github.com/codemargaret/pizza-delivery.git)
+2. `$ cd pizza-delivery`
+3. `$ open index.html`
 
 ## Known Bugs
-
 _There are no known bugs at this time._
 
-## Support and contact details
+## Future Features
+_If a user orders multiple pizzas, show the total order price._
 
-_If you have questions, comments, or concerns, please contact [Margaret](margaretshelaghmcgovern@gmail.com).  Feel free to make a contribution to the code._
+## Support and contact details
+_If you have any updates, questions, or suggestions please contact [Margaret] or make a contribution._
+
+[Margaret]: mailto:codeberry1@gmail.com
 
 ## Technologies Used
-
 * _HTML_
 * _CSS_
 * _Bootstrap_
@@ -51,7 +39,6 @@ _If you have questions, comments, or concerns, please contact [Margaret](margare
 * _jQuery_
 
 ### License
-
 *This software is licensed under the MIT license.*
 
 Copyright (c) 2017 **_Margaret Berry_**
